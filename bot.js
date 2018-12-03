@@ -632,15 +632,6 @@ client.on('message', message => {
 
 
 
-client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`System`);
-        console.log(`---------------`);
-      console.log(`ON ${client.guilds.size} Servers `);
-    console.log(`---------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
-  
-});
 
 
 
