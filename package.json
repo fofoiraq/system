@@ -6,8 +6,8 @@
   "dependencies": {
     "canvas": "^1.6.12",
     "discord.js": "^11.4.2",
+    "file-system": "^2.2.2",
     "fs": "0.0.2",
-    "file-system": "0.0.2",
     "jimp": "^0.4.0",
     "moment": "^2.22.2",
     "ms": "^2.1.1",
@@ -19,4 +19,3 @@
   },
   "author": "",
   "license": "ISC"
-}
