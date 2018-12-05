@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const fs = require('fs');
+const fs = require('file-system');
 const client = new Discord.Client();
 var prefix = '+'
 client.on('ready', () => {
