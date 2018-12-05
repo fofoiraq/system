@@ -5,6 +5,20 @@ client.on('ready', () => {
   client.user.setActivity("M4G Shop", { type: "PLAYING"})
   console.log(`Logged in as ${client.user.tag}!`);
 });
+
+client.on('message', function(message) {
+    if (message.channel.type === "dm") {
+        if (message.author.id === client.user.id) return;
+        var RaYaN= new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTimestamp()
+        .setTitle('``New Message in private``')
+        .setThumbnail(`${message.author.avatarURL}`)
+        .setDescription(`\n\n\`\`\`${message.content}\`\`\``)
+        .setFooter(`From **${message.author.tag} (${message.author.id})**`)
+    client.channels.get("519974600478687254").send({embed:RaYaN});
+    }
+});
  client.on('message',async message => {
     const moment = require('moment');
 const ms = require('ms')
